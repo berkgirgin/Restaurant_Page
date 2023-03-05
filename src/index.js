@@ -1,5 +1,5 @@
 import createHomePage from "./website_home_page.js";
-import "./styles.css";
+import "./styles/styles.css";
 import background_1 from "./assets/images/background_images/background_1.jpeg";
 import background_2 from "./assets/images/background_images/background_2.jpeg";
 import background_3 from "./assets/images/background_images/background_3.jpeg";

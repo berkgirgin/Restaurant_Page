@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Libre_Baskerville";
+  src: url("../assets/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf"),
+    url("../assets/fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf"),
+    url("../assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --header-background-color: lightslategray;
+  --gold-color: #ca8a04;
+  --gold-color-hover: #eab308;
+  --white-color: #e8e6e3;
+  --border_color_grey: #858585;
+  --border_radius: 10px;
+  --form_border: 2px var(--border_color_grey) solid;
+  font-family: "Libre_Baskerville", sans-serif;
+  color: var(--white-color);
+}
+
+body {
+  background-color: lightslategray;
+  margin: 0;
+  padding: 0;
+}
+
+.first_block_main {
+  height: 100vh;
+  color: white;
+  background-color: var(--header-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/background_images/background_1.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+
+  /* box-shadow: inset 0 0 99999px rgba(0, 120, 255, 1); */
+}
+
+/* ****** */
+/* Header */
+/* ****** */
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.header_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 4rem;
+  margin-top: -0.7rem;
+}
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+.header img:hover {
+  height: 4rem;
+  margin-top: -0.7rem;
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+.header_right a {
+  margin: 0 1rem;
+  color: var(--gold-color);
+}
+.header_right a:hover {
+  transform: scale(1.1);
+  color: var(--gold-color-hover);
+}
+
+/* first block content */
+
+.first_block_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.first_block_content .restaurant_slogan {
+  font-size: 2.5rem;
+}
+.first_block_content img {
+  width: 400px;
+  margin-right: -120px;
+}
+
+.first_block_content button {
+  cursor: pointer;
+  color: var(--font_color_white);
+  background-color: var(--gold-color);
+  border-radius: var(--border_radius);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  box-shadow: inset 0 0 14px black;
+}
+.first_block_content button:hover {
+  transform: scale(1.1);
+  background-color: var(--gold-color-hover);
+}

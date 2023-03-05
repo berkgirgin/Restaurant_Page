@@ -21,7 +21,7 @@ function createHeader() {
 
     const restaurantName = document.createElement("div");
     restaurantName.classList.add("restaurant_name");
-    restaurantName.innerHTML = "Pasha Döner";
+    restaurantName.innerHTML = "PASHA DONER ";
     header_left.appendChild(restaurantName);
   })();
 
@@ -31,18 +31,18 @@ function createHeader() {
     header.appendChild(header_right);
 
     const link_1 = document.createElement("a");
-    link_1.setAttribute("href", "#");
     link_1.innerHTML = "Home";
+    link_1.setAttribute("href", "./index.html");
     header_right.appendChild(link_1);
 
     const link_2 = document.createElement("a");
-    link_2.setAttribute("href", "#");
     link_2.innerHTML = "Menu";
+    link_2.setAttribute("href", "./menu.html");
     header_right.appendChild(link_2);
 
     const link_3 = document.createElement("a");
-    link_3.setAttribute("href", "#");
     link_3.innerHTML = "Contact";
+    link_3.setAttribute("href", "./contact.html");
     header_right.appendChild(link_3);
   })();
 }
