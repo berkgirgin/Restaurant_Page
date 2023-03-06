@@ -25,6 +25,7 @@ module.exports = {
       inject: "body",
       template: "./src/index.html",
       filename: "index.html",
+      chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       inject: "body",
