@@ -62,9 +62,16 @@ body {
   align-items: center;
 }
 
+.header_left .restaurant_name {
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
 .header img {
   height: 4rem;
   margin-top: -0.7rem;
+  cursor: pointer;
 }
 @keyframes tilt-n-move-shaking {
   0% {

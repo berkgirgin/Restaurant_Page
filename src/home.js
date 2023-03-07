@@ -26,6 +26,10 @@ export function createHeader() {
     img.setAttribute("alt", "header logo");
     header_left.appendChild(img);
 
+    img.addEventListener("click", () => {
+      location.href = "./index.html";
+    });
+
     const restaurantName = document.createElement("div");
     restaurantName.classList.add("restaurant_name");
     restaurantName.innerHTML = "PASHA DONER ";
@@ -72,6 +76,10 @@ function createContentBlock() {
   const button = document.createElement("button");
   button.innerHTML = "Check our selection!";
   contentBlock.appendChild(button);
+
+  button.addEventListener("click", () => {
+    location.href = "./menu.html";
+  });
 }
 
 function changeImageAndMessage() {
