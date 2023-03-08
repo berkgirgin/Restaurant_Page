@@ -9,6 +9,7 @@ import menu_doner_teller from "./assets/images/menu_images/menu_doner_teller.png
 import menu_doner_pizza from "./assets/images/menu_images/menu_doner_pizza.png";
 import sauce_garlic from "./assets/images/menu_images/sauce_garlic.png";
 import sauce_hot from "./assets/images/menu_images/sauce_hot.png";
+import approved_logo from "./assets/images/approved_logo.jpeg";
 
 import { createHeader } from "./home.js";
 
@@ -38,6 +39,18 @@ function createMenuContent() {
     itemPrice.classList.add("item_price");
     itemPrice.innerHTML = item_price;
     menuItem.appendChild(itemPrice);
+
+    menuItem.addEventListener("click", (element) => {
+      if (menuItem.querySelector(".approved_logo")) {
+        menuItem.querySelector(".approved_logo").remove();
+      } else {
+        const approvedLogo = document.createElement("img");
+        approvedLogo.classList.add("approved_logo");
+        approvedLogo.setAttribute("alt", "approved logo");
+        approvedLogo.setAttribute("src", `${approved_logo}`);
+        menuItem.appendChild(approvedLogo);
+      }
+    });
   }
 
   function createSauceItem(src, sauce_name) {

@@ -157,7 +157,7 @@ formRowEmail.appendChild(input_email);
 createFormRow("text_area");
 const formTextArea = document.querySelector(".form_row.text_area");
 
-const label_textArea = document.createElement("text_area");
+const label_textArea = document.createElement("label");
 label_textArea.innerHTML = "Your message:";
 label_textArea.classList.add("text_area");
 formTextArea.appendChild(label_textArea);
