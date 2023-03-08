@@ -8,6 +8,7 @@
   --white-color: #e8e6e3;
   --border_color_grey: #858585;
   --border_radius: 10px;
+  --footer-height: 1.8rem;
 }
 
 h2,
@@ -33,6 +34,10 @@ body {
   background-attachment: fixed;
 
   box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+}
+
+.menu_main_container {
+  min-height: calc(100vh + var(--footer-height));
 }
 
 /* ********** */

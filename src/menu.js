@@ -11,7 +11,7 @@ import sauce_garlic from "./assets/images/menu_images/sauce_garlic.png";
 import sauce_hot from "./assets/images/menu_images/sauce_hot.png";
 import approved_logo from "./assets/images/approved_logo.jpeg";
 
-import { createHeader } from "./home.js";
+import { createHeader, createFooter } from "./home.js";
 
 // console.log("hallo from menu.js");
 // console.log("2hallo from menu.js");
@@ -119,6 +119,7 @@ function createMenuContent() {
 function createMenuPage() {
   createHeader();
   createMenuContent();
+  createFooter();
 }
 
 createMenuPage();

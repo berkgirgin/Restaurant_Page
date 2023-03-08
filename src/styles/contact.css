@@ -13,6 +13,7 @@
 
   --contact-form-gap: 0.8rem;
   --form-background-color: #181a1b;
+  --footer-height: 1.8rem;
 }
 
 body {
@@ -24,6 +25,13 @@ body {
   height: 100vh;
 
   box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+}
+
+.contact_main_container {
+  /* min-height: calc(100vh + var(--footer-height)); */
+  min-height: calc(100vh + var(--footer-height));
+  display: flex;
+  flex-direction: column;
 }
 
 /* ********* */

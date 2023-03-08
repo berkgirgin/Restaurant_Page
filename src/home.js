@@ -5,6 +5,8 @@ import background_2 from "./assets/images/background_images/background_2.jpeg";
 import background_3 from "./assets/images/background_images/background_3.jpeg";
 import background_4 from "./assets/images/background_images/background_4.jpeg";
 import background_5 from "./assets/images/background_images/background_5.jpeg";
+import github_logo from "./assets/images/icons/github-64.png";
+
 
 console.log("hallo from home.js");
 
@@ -82,6 +84,23 @@ function createContentBlock() {
   });
 }
 
+export function createFooter() {
+  const footer = document.createElement("footer");
+  footer.classList.add("footer_container");
+  footer.innerHTML = "Here I practiced generating HTML files with Javascript and bundling with Webpack&nbsp;&nbsp;"
+  mainContainer.appendChild(footer);
+
+  const footerGithubLink = document.createElement("a")
+  footerGithubLink.setAttribute("href", "https://github.com/berkgirgin/Restaurant_Page");
+  footer.appendChild(footerGithubLink);
+
+  const footerGithubLogo = document.createElement("img");
+  footerGithubLogo.setAttribute("src", github_logo);
+  footerGithubLogo.setAttribute("alt", "git repo")
+  footerGithubLink.appendChild(footerGithubLogo)
+
+}
+
 function changeImageAndMessage() {
   const backgroundElement = document.querySelector(".first_block_main");
   const restaurantSlogan = document.querySelector(".restaurant_slogan");
@@ -135,4 +154,5 @@ export function createHomePage() {
   createHeader();
   createContentBlock();
   changeImageAndMessage();
+  createFooter();
 }

@@ -6,7 +6,7 @@ import opening_icon from "./assets/images/icons/opening_icon.png";
 import phone_icon from "./assets/images/icons/phone_icon.png";
 import message_icon from "./assets/images/icons/message_icon.png";
 
-import { createHeader } from "./home.js";
+import { createHeader, createFooter } from "./home.js";
 
 const mainContainer = document.querySelector(".contact_main_container");
 createHeader();
@@ -178,6 +178,10 @@ formButton.setAttribute("type", "submit");
 
 contactForm.appendChild(formButton);
 // ***********
+
+//Footer
+createFooter();
+//******
 
 // ******************************
 // ******************************

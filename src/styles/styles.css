@@ -15,6 +15,7 @@
   --border_color_grey: #858585;
   --border_radius: 10px;
   --form_border: 2px var(--border_color_grey) solid;
+  --footer-height: 1.8rem;
   font-family: "Libre_Baskerville", sans-serif;
   color: var(--white-color);
 }
@@ -26,7 +27,7 @@ body {
 }
 
 .first_block_main {
-  height: 100vh;
+  min-height: calc(100vh + var(--footer-height));
   color: white;
   background-color: var(--header-background-color);
   display: flex;
@@ -139,4 +140,29 @@ body {
 .first_block_content button:hover {
   transform: scale(1.1);
   background-color: var(--gold-color-hover);
+}
+
+
+/* footer */
+
+footer {
+  background-color: rgba(93, 21, 21, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: var(--footer-height);
+
+  margin-top: auto;
+
+}
+
+footer img {
+  height: var(--footer-height);
+  transform: scale(1.2);
+
+}
+
+footer img:hover {
+  transform: scale(1.3);
 }
